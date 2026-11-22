@@ -1,0 +1,56 @@
+{
+  "index": "releases/20261122T171254784929Z-bcd76f029df1/index.json",
+  "release_id": "20261122T171254784929Z-bcd76f029df1",
+  "rule_sets": [
+    {
+      "behavior": "classical",
+      "entry_count": 219,
+      "id": "ai-category",
+      "sha256": "8d301efd9b327c49ce786587f9aadbfaa9d4c01ee3efe4b3e023b247294f0aa5",
+      "url": "current/ai-category.yaml"
+    },
+    {
+      "behavior": "classical",
+      "entry_count": 28,
+      "id": "netflix",
+      "sha256": "96eb7872b7e8fd9f843e5a17ee2d4e98140aefef4ba261c4f1d8f718e53d6003",
+      "url": "current/netflix.yaml"
+    },
+    {
+      "behavior": "classical",
+      "entry_count": 178,
+      "id": "youtube",
+      "sha256": "5530fa8af7efecdbfbbed3b39fb133bb49fc97d32c290cec05dfbe4bfbb30a95",
+      "url": "current/youtube.yaml"
+    },
+    {
+      "behavior": "classical",
+      "entry_count": 28,
+      "id": "spotify",
+      "sha256": "99d9040995073d6db4deeaf9d5404f69228b93d49849d9362340fc79e1ec9a01",
+      "url": "current/spotify.yaml"
+    },
+    {
+      "behavior": "classical",
+      "entry_count": 66,
+      "id": "github",
+      "sha256": "6d3d59da58994f63891be9f19b69c1d1735fda4970f77c4c0bdbb9bc8004b22b",
+      "url": "current/github.yaml"
+    },
+    {
+      "behavior": "classical",
+      "entry_count": 21,
+      "id": "telegram",
+      "sha256": "a680e71bfbd2ad499dad184f182108689b4345ddd15824d7e3756c3baec96910",
+      "url": "current/telegram.yaml"
+    },
+    {
+      "behavior": "classical",
+      "entry_count": 1125,
+      "id": "google",
+      "sha256": "3f375325aef4094e7c62e83914d97d37b841ac75f6a94e870ea81f679cc180dd",
+      "url": "current/google.yaml"
+    }
+  ],
+  "schema_version": 1
+}
