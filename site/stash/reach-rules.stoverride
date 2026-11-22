@@ -1,0 +1,45 @@
+name: Reach Rule Sets
+desc: Registers current public Reach rule sets; adds no traffic-routing rules.
+rule-providers:
+  ai-category:
+    behavior: classical
+    format: yaml
+    url: https://omoyx.github.io/reach-rules/current/ai-category.yaml
+    path: ./rules/reach-ai-category.yaml
+    interval: 86400
+  netflix:
+    behavior: classical
+    format: yaml
+    url: https://omoyx.github.io/reach-rules/current/netflix.yaml
+    path: ./rules/reach-netflix.yaml
+    interval: 86400
+  youtube:
+    behavior: classical
+    format: yaml
+    url: https://omoyx.github.io/reach-rules/current/youtube.yaml
+    path: ./rules/reach-youtube.yaml
+    interval: 86400
+  spotify:
+    behavior: classical
+    format: yaml
+    url: https://omoyx.github.io/reach-rules/current/spotify.yaml
+    path: ./rules/reach-spotify.yaml
+    interval: 86400
+  github:
+    behavior: classical
+    format: yaml
+    url: https://omoyx.github.io/reach-rules/current/github.yaml
+    path: ./rules/reach-github.yaml
+    interval: 86400
+  telegram:
+    behavior: classical
+    format: yaml
+    url: https://omoyx.github.io/reach-rules/current/telegram.yaml
+    path: ./rules/reach-telegram.yaml
+    interval: 86400
+  google:
+    behavior: classical
+    format: yaml
+    url: https://omoyx.github.io/reach-rules/current/google.yaml
+    path: ./rules/reach-google.yaml
+    interval: 86400
