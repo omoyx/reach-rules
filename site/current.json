@@ -1,12 +1,12 @@
 {
-  "index": "releases/20261122T171254784929Z-bcd76f029df1/index.json",
-  "release_id": "20261122T171254784929Z-bcd76f029df1",
+  "index": "releases/20261123T201720448581Z-a9c4414aa221/index.json",
+  "release_id": "20261123T201720448581Z-a9c4414aa221",
   "rule_sets": [
     {
       "behavior": "classical",
-      "entry_count": 219,
+      "entry_count": 220,
       "id": "ai-category",
-      "sha256": "8d301efd9b327c49ce786587f9aadbfaa9d4c01ee3efe4b3e023b247294f0aa5",
+      "sha256": "1977bb6fd5fc31197cb4c02a4d0cf1db02f90f4fe2e1539adce18ca5c4c0b4c6",
       "url": "current/ai-category.yaml"
     },
     {
@@ -46,9 +46,9 @@
     },
     {
       "behavior": "classical",
-      "entry_count": 1125,
+      "entry_count": 1126,
       "id": "google",
-      "sha256": "3f375325aef4094e7c62e83914d97d37b841ac75f6a94e870ea81f679cc180dd",
+      "sha256": "75a99a3b7a2ec8fddb7783e35fff989c3af057336ba8b921928dc56a461cdc6d",
       "url": "current/google.yaml"
     }
   ],
