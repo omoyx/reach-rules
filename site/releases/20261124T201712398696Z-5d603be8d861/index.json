@@ -1,0 +1,685 @@
+{
+  "created_at": "2026-11-24T20:17:12.398696Z",
+  "release_id": "20261124T201712398696Z-5d603be8d861",
+  "rule_sets": [
+    {
+      "behavior": "classical",
+      "entry_count": 220,
+      "format": "yaml",
+      "id": "ai-category",
+      "license": "MIT",
+      "path": "rules/ai-category.yaml",
+      "provenance": {
+        "attribution": "V2Fly domain-list-community; retain the upstream LICENSE file",
+        "commit": "98c43cad27fa8f02043858763709fe4a95432ffb",
+        "converter": "v2fly-domain-list-to-classical/1",
+        "fetch_api": "api.github.com",
+        "files": [
+          {
+            "git_blob_sha": "1f086538ba3a1d26f46ec44cfda12c2a0c4753a6",
+            "path": "LICENSE",
+            "sha256": "b9d84a22870d3f21c91a4c6e410c9cc51d00902f5233ad0c84011479244bf7d2"
+          },
+          {
+            "git_blob_sha": "a22014bbce13aa97e8b628ca9147f3fc37711449",
+            "path": "data/anthropic",
+            "sha256": "59ad6a25a6d9759995777fe98f2cf30675199fad00546a0ffe027b95ec0776f0"
+          },
+          {
+            "git_blob_sha": "fef9911dc9bbabf5206cf38f64eab30572fd0d7c",
+            "path": "data/bytedance-ai-!cn",
+            "sha256": "0048660c74ee0f493d281cb94d44052025b9a419e9320b5f472748b75b7711b1"
+          },
+          {
+            "git_blob_sha": "9c591594fc562c06c1fc3966d150380be54d5274",
+            "path": "data/category-ai-!cn",
+            "sha256": "68c652a6ec62fc8d8316c255fb32f94389b084a1b886def6f9e8e631314a11bf"
+          },
+          {
+            "git_blob_sha": "7d4f10a9a4c4016064b7db8ab70ebbb646a3b4b2",
+            "path": "data/cerebras",
+            "sha256": "713ea33f6828bb2ac34db413204ea4ddb5d8740aef64e521f46f55fbc99d771d"
+          },
+          {
+            "git_blob_sha": "e88322583fcf0174baf86134e692aa1644bcb1d8",
+            "path": "data/comfy",
+            "sha256": "0199a140ca1be2d691c17a29f695173c344e83ef9187f321e53c0e8a0392c960"
+          },
+          {
+            "git_blob_sha": "42165f78e1d26f7c1764ab43a99a8152f1719e8a",
+            "path": "data/comfy-ui-launcher",
+            "sha256": "1c33a3088de4e95eceb817db1b982b857a1c4b12c6724d230620745f298a918b"
+          },
+          {
+            "git_blob_sha": "ff22d65c40467fc57b8e85dd46768caad74228c2",
+            "path": "data/cursor",
+            "sha256": "eb7315056ebfb599a7dccedddcb5aa7f7723665aa800e2783fff798c1fa3724e"
+          },
+          {
+            "git_blob_sha": "5b8d3dc87c864a30a1aba73afe056e63834c0c96",
+            "path": "data/dola",
+            "sha256": "f732a4248c3594bcfeaecae5629842c7ad72bb32aa297b6b6ffc27f4b96efc6f"
+          },
+          {
+            "git_blob_sha": "33d599a977be4c78f8c17e10b9039e259cd6e1b0",
+            "path": "data/elevenlabs",
+            "sha256": "88f3412837a17af32533013ab039b988a6c26a519d73846f728b84a19e26487f"
+          },
+          {
+            "git_blob_sha": "59e9072836c34efdfc070be5924e649ecc0d82cf",
+            "path": "data/envato",
+            "sha256": "07df2d1f56a06149222183b025dcdb2ef4db3eb49ea0a6d1ba864cbd260f6f3b"
+          },
+          {
+            "git_blob_sha": "6435f5a70241da0ed85706219fb08373e20ca9c4",
+            "path": "data/github-copilot",
+            "sha256": "bd8f1a7a846f1111710c31b13b45262f35220a00e8dfaf4c5830dc618ec51748"
+          },
+          {
+            "git_blob_sha": "34615929596bb6edcab06a87ec823bd9c73c7fbf",
+            "path": "data/google-deepmind",
+            "sha256": "fa60e3f80e1487e38c04c92973102ff481c961e620b9bb11fb8585451f5ff2db"
+          },
+          {
+            "git_blob_sha": "f755c7f42d8c500b4cdd7b0e9d64a7f6d69a7177",
+            "path": "data/groq",
+            "sha256": "d779541783d4c835ad341a13ae3c3a008bfa3e535b46f79518b92bdef17588bb"
+          },
+          {
+            "git_blob_sha": "17079fc6b46c6b5fe53b537310fae4c95de3967f",
+            "path": "data/huggingface",
+            "sha256": "67f5861b31232701f884efd38d9436dd89183fccbd01d6f10d791b9ef6fbf4b8"
+          },
+          {
+            "git_blob_sha": "e0d4131160d4dc282343484b52a0ed5b3999ef02",
+            "path": "data/jetbrains-ai",
+            "sha256": "b1bb655fc82a45311745ef0513dc6889f76cb4bfc0cd9cd563788b5e502b6a53"
+          },
+          {
+            "git_blob_sha": "45866460104cadf2965687eec2c2cd5abed0cc75",
+            "path": "data/liveperson",
+            "sha256": "2e146391a816f4497b0a987f2d7edfb0e7e0e11ae450e47a4c0779a0868d7e22"
+          },
+          {
+            "git_blob_sha": "48f565c7b7aebff3c0c93d350e1c8eb6c5640641",
+            "path": "data/manus",
+            "sha256": "3fa777650b51936dd5f36c7f4763a025f2ed46570fbb4adc63e48eaaa14d1de5"
+          },
+          {
+            "git_blob_sha": "d6f5f3d1b5fbcfc87e04aafcbeef5ffdc81d766c",
+            "path": "data/openai",
+            "sha256": "25d53e9af3e04d926210d6436bd791594ef4b86f2dc3c108510ac8059d76d969"
+          },
+          {
+            "git_blob_sha": "a04233378d10f425dd4cde20e9c51ef538bedd5d",
+            "path": "data/perplexity",
+            "sha256": "570581bad658566cb493207c14ebb55110750071071e089b4c40054b00af3db0"
+          },
+          {
+            "git_blob_sha": "3bead5b2104df3fc3219508f0f9d2518b39857b0",
+            "path": "data/poe",
+            "sha256": "e689a8d337b64bcf760e5d8dfe03e3d29d8558063db93acba2d1d6eb9c11003a"
+          },
+          {
+            "git_blob_sha": "f13f57fc3643fc9862e46242af13623fd09edca8",
+            "path": "data/windsurf",
+            "sha256": "d6d082e40d180efbabde3b1a5bd8fe1bdc804f1a11b79d2128fe41e0b4dc4e16"
+          },
+          {
+            "git_blob_sha": "d84939aa536f676684086d1269b25c7eaecc970c",
+            "path": "data/xai",
+            "sha256": "4c95fc6465d5f135f5d27935e9b44f6fcc82cfaa0eb6bb4e3232c44c5c581628"
+          },
+          {
+            "git_blob_sha": "3618570f096b2484cb9b9b42e54a570fdd20636b",
+            "path": "data/youmind",
+            "sha256": "a1a4dd677d58f48dead7421a94a46ddc34f87c76ff35c8322dcc952ac79d0f29"
+          }
+        ],
+        "license_path": "LICENSE",
+        "redirect_hosts": [],
+        "repository": "v2fly/domain-list-community",
+        "root_path": "data/category-ai-!cn",
+        "tracked_ref": "master"
+      },
+      "sha256": "1977bb6fd5fc31197cb4c02a4d0cf1db02f90f4fe2e1539adce18ca5c4c0b4c6",
+      "source": "https://github.com/v2fly/domain-list-community"
+    },
+    {
+      "behavior": "classical",
+      "entry_count": 28,
+      "format": "yaml",
+      "id": "netflix",
+      "license": "MIT",
+      "path": "rules/netflix.yaml",
+      "provenance": {
+        "attribution": "V2Fly domain-list-community; retain the upstream LICENSE file",
+        "commit": "98c43cad27fa8f02043858763709fe4a95432ffb",
+        "converter": "v2fly-domain-list-to-classical/1",
+        "fetch_api": "api.github.com",
+        "files": [
+          {
+            "git_blob_sha": "1f086538ba3a1d26f46ec44cfda12c2a0c4753a6",
+            "path": "LICENSE",
+            "sha256": "b9d84a22870d3f21c91a4c6e410c9cc51d00902f5233ad0c84011479244bf7d2"
+          },
+          {
+            "git_blob_sha": "65af23034d79a097c546a8b7766ce13a5b855498",
+            "path": "data/netflix",
+            "sha256": "fbcf90283b3c3482e2178d450793219f9592ea60b2dfa3d16a7a9d40074aa284"
+          }
+        ],
+        "license_path": "LICENSE",
+        "redirect_hosts": [],
+        "repository": "v2fly/domain-list-community",
+        "root_path": "data/netflix",
+        "tracked_ref": "master"
+      },
+      "sha256": "96eb7872b7e8fd9f843e5a17ee2d4e98140aefef4ba261c4f1d8f718e53d6003",
+      "source": "https://github.com/v2fly/domain-list-community"
+    },
+    {
+      "behavior": "classical",
+      "entry_count": 178,
+      "format": "yaml",
+      "id": "youtube",
+      "license": "MIT",
+      "path": "rules/youtube.yaml",
+      "provenance": {
+        "attribution": "V2Fly domain-list-community; retain the upstream LICENSE file",
+        "commit": "98c43cad27fa8f02043858763709fe4a95432ffb",
+        "converter": "v2fly-domain-list-to-classical/1",
+        "fetch_api": "api.github.com",
+        "files": [
+          {
+            "git_blob_sha": "1f086538ba3a1d26f46ec44cfda12c2a0c4753a6",
+            "path": "LICENSE",
+            "sha256": "b9d84a22870d3f21c91a4c6e410c9cc51d00902f5233ad0c84011479244bf7d2"
+          },
+          {
+            "git_blob_sha": "77cb29fb260f4b1810759de8df0f4ceb9b83b100",
+            "path": "data/youtube",
+            "sha256": "9ffb657176fdffed567953749c137bb3d8a216ce4e839b3831b626c752902213"
+          }
+        ],
+        "license_path": "LICENSE",
+        "redirect_hosts": [],
+        "repository": "v2fly/domain-list-community",
+        "root_path": "data/youtube",
+        "tracked_ref": "master"
+      },
+      "sha256": "5530fa8af7efecdbfbbed3b39fb133bb49fc97d32c290cec05dfbe4bfbb30a95",
+      "source": "https://github.com/v2fly/domain-list-community"
+    },
+    {
+      "behavior": "classical",
+      "entry_count": 28,
+      "format": "yaml",
+      "id": "spotify",
+      "license": "MIT",
+      "path": "rules/spotify.yaml",
+      "provenance": {
+        "attribution": "V2Fly domain-list-community; retain the upstream LICENSE file",
+        "commit": "98c43cad27fa8f02043858763709fe4a95432ffb",
+        "converter": "v2fly-domain-list-to-classical/1",
+        "fetch_api": "api.github.com",
+        "files": [
+          {
+            "git_blob_sha": "1f086538ba3a1d26f46ec44cfda12c2a0c4753a6",
+            "path": "LICENSE",
+            "sha256": "b9d84a22870d3f21c91a4c6e410c9cc51d00902f5233ad0c84011479244bf7d2"
+          },
+          {
+            "git_blob_sha": "e39114062f95c68035a44a25965649c93a89a831",
+            "path": "data/spotify",
+            "sha256": "02c79e71b22805e1dafa156c9370760bd7e6295af30eaf1c9004a1be2b35065b"
+          }
+        ],
+        "license_path": "LICENSE",
+        "redirect_hosts": [],
+        "repository": "v2fly/domain-list-community",
+        "root_path": "data/spotify",
+        "tracked_ref": "master"
+      },
+      "sha256": "99d9040995073d6db4deeaf9d5404f69228b93d49849d9362340fc79e1ec9a01",
+      "source": "https://github.com/v2fly/domain-list-community"
+    },
+    {
+      "behavior": "classical",
+      "entry_count": 66,
+      "format": "yaml",
+      "id": "github",
+      "license": "MIT",
+      "path": "rules/github.yaml",
+      "provenance": {
+        "attribution": "V2Fly domain-list-community; retain the upstream LICENSE file",
+        "commit": "98c43cad27fa8f02043858763709fe4a95432ffb",
+        "converter": "v2fly-domain-list-to-classical/1",
+        "fetch_api": "api.github.com",
+        "files": [
+          {
+            "git_blob_sha": "1f086538ba3a1d26f46ec44cfda12c2a0c4753a6",
+            "path": "LICENSE",
+            "sha256": "b9d84a22870d3f21c91a4c6e410c9cc51d00902f5233ad0c84011479244bf7d2"
+          },
+          {
+            "git_blob_sha": "4047e0cd3ce653b882a74e9e8b8af0bcce633bf5",
+            "path": "data/github",
+            "sha256": "549a8bf61fd4a673a59e0a0f8794e66e5228d6a8bc759c6f4888a287e728ccc2"
+          },
+          {
+            "git_blob_sha": "6435f5a70241da0ed85706219fb08373e20ca9c4",
+            "path": "data/github-copilot",
+            "sha256": "bd8f1a7a846f1111710c31b13b45262f35220a00e8dfaf4c5830dc618ec51748"
+          },
+          {
+            "git_blob_sha": "2f37732ea053f245ae8b7354ad55330c3d9d9a3e",
+            "path": "data/npmjs",
+            "sha256": "674294756c3e5d7f20e274f7190f28b55eb373122513d0ab5e439e29dd03be53"
+          }
+        ],
+        "license_path": "LICENSE",
+        "redirect_hosts": [],
+        "repository": "v2fly/domain-list-community",
+        "root_path": "data/github",
+        "tracked_ref": "master"
+      },
+      "sha256": "6d3d59da58994f63891be9f19b69c1d1735fda4970f77c4c0bdbb9bc8004b22b",
+      "source": "https://github.com/v2fly/domain-list-community"
+    },
+    {
+      "behavior": "classical",
+      "entry_count": 21,
+      "format": "yaml",
+      "id": "telegram",
+      "license": "MIT",
+      "path": "rules/telegram.yaml",
+      "provenance": {
+        "attribution": "V2Fly domain-list-community; retain the upstream LICENSE file",
+        "commit": "98c43cad27fa8f02043858763709fe4a95432ffb",
+        "converter": "v2fly-domain-list-to-classical/1",
+        "fetch_api": "api.github.com",
+        "files": [
+          {
+            "git_blob_sha": "1f086538ba3a1d26f46ec44cfda12c2a0c4753a6",
+            "path": "LICENSE",
+            "sha256": "b9d84a22870d3f21c91a4c6e410c9cc51d00902f5233ad0c84011479244bf7d2"
+          },
+          {
+            "git_blob_sha": "aed880e37775c67556c4975ffebaf6c6681862bf",
+            "path": "data/telegram",
+            "sha256": "24a2d026dbf3a09a8ca893420a40adbad70328978df0100d9c63abecdbf01b5d"
+          }
+        ],
+        "license_path": "LICENSE",
+        "redirect_hosts": [],
+        "repository": "v2fly/domain-list-community",
+        "root_path": "data/telegram",
+        "tracked_ref": "master"
+      },
+      "sha256": "a680e71bfbd2ad499dad184f182108689b4345ddd15824d7e3756c3baec96910",
+      "source": "https://github.com/v2fly/domain-list-community"
+    },
+    {
+      "behavior": "classical",
+      "entry_count": 1126,
+      "format": "yaml",
+      "id": "google",
+      "license": "MIT",
+      "path": "rules/google.yaml",
+      "provenance": {
+        "attribution": "V2Fly domain-list-community; retain the upstream LICENSE file",
+        "commit": "98c43cad27fa8f02043858763709fe4a95432ffb",
+        "converter": "v2fly-domain-list-to-classical/1",
+        "fetch_api": "api.github.com",
+        "files": [
+          {
+            "git_blob_sha": "1f086538ba3a1d26f46ec44cfda12c2a0c4753a6",
+            "path": "LICENSE",
+            "sha256": "b9d84a22870d3f21c91a4c6e410c9cc51d00902f5233ad0c84011479244bf7d2"
+          },
+          {
+            "git_blob_sha": "e642185efb7c6cb1322fd872aa976d493084c34c",
+            "path": "data/android",
+            "sha256": "1c90653035a7504b5d0b883f9090717ecfe23f8873aee75645071b1c461c4043"
+          },
+          {
+            "git_blob_sha": "a2a4bb3972a932d687fc2d757e4b108ae3edc2b9",
+            "path": "data/blogspot",
+            "sha256": "9f9d2e0eba824d204812b0c64bee64ff1f4d4a4c838031f8f24c5f013e5e6063"
+          },
+          {
+            "git_blob_sha": "64b481f933d5a3478c9cdd245718addff527a118",
+            "path": "data/dart",
+            "sha256": "8d4d744d1116638b4789c6502e3168e2c156d6a2747d9f1efd9028c502907a7b"
+          },
+          {
+            "git_blob_sha": "6fb0f54341a24d3f131d5be79f1527122111faec",
+            "path": "data/fastlane",
+            "sha256": "c7917e6f926dfe2cbf63709aeeb7bbd397b349fe970467a097bbdd919c199861"
+          },
+          {
+            "git_blob_sha": "2f5fabdcb9a80298a606ef92f00480b5ed00d0d5",
+            "path": "data/firebase",
+            "sha256": "816b85c8cf0e9f686ab3ba332029b3f3ab8f602b01b930a42e4c4bdfee4b07fa"
+          },
+          {
+            "git_blob_sha": "c49a43def509d252652334561a05ac19133ce544",
+            "path": "data/flutter",
+            "sha256": "98e9bc2d286c8edb174f67e195a40b7278890cade98b89dc25842424376f38b8"
+          },
+          {
+            "git_blob_sha": "64f2020c1ba3d0f165457dc774819e8c5ef63e73",
+            "path": "data/golang",
+            "sha256": "2c6febc8eceaa343fb8904840017f65123f30be28eea4c6f3d1a1ce50645b346"
+          },
+          {
+            "git_blob_sha": "e4e550b506d510bcc3087c6a7476783e34e37b49",
+            "path": "data/google",
+            "sha256": "5a85d201b8fb4b03486515618da4c164a0ce0c59341cb2dee6d1b0bdca176653"
+          },
+          {
+            "git_blob_sha": "34615929596bb6edcab06a87ec823bd9c73c7fbf",
+            "path": "data/google-deepmind",
+            "sha256": "fa60e3f80e1487e38c04c92973102ff481c961e620b9bb11fb8585451f5ff2db"
+          },
+          {
+            "git_blob_sha": "3fdb40ef39977e1bdb41bd2b607c63f5571818ae",
+            "path": "data/google-play",
+            "sha256": "ea1a161c52a443b2c0a105f8a94bcfc86e5c8a267d483f34e53848b7310fc65e"
+          },
+          {
+            "git_blob_sha": "2bd23e63ec20ba59fe4baae3e213175a21324269",
+            "path": "data/google-registry",
+            "sha256": "a8060ed62f9ccb984b3099861d23a5f54cc51a5b26d5abddffd08924710d78dd"
+          },
+          {
+            "git_blob_sha": "db8189b00cdc97a417ba193b483c019510bbc35f",
+            "path": "data/google-scholar",
+            "sha256": "76eb1c15c0b4fc479d7a88f4f5065ab9de61c7711e3660f2f4f6dc5ff267a31f"
+          },
+          {
+            "git_blob_sha": "5f486907116041e9159c85d252fd3c0d6c54864c",
+            "path": "data/google-trust-services",
+            "sha256": "09f22a4aac72092ddcdd8e91dbf444b905a6b5eecaede13f2ca5605968d63702"
+          },
+          {
+            "git_blob_sha": "85b35de8a7f1a490cc8ecd9cf77832718683a93c",
+            "path": "data/googlefcm",
+            "sha256": "6611d2b58eda9737b00e14cebdebb52918709df1fc8b39b95a2966b55a1cfc7b"
+          },
+          {
+            "git_blob_sha": "e7a69fce12a89f3282505d01a9090206000f30b6",
+            "path": "data/kaggle",
+            "sha256": "6257e9fe2594961ccccefa6b9d4a99fda236e9563a7274304303b9a2c63e911b"
+          },
+          {
+            "git_blob_sha": "49c55300b8a9348280365a9d000f22d15d4cc41e",
+            "path": "data/opensourceinsights",
+            "sha256": "f4ade2b230eaf9fa05b2f3ca20d72a24fe7248a876a020bd209921876c6febcd"
+          },
+          {
+            "git_blob_sha": "c3fc4c0128368b6addacebec0c13cb033d26c381",
+            "path": "data/polymer",
+            "sha256": "fbb1cb902ab884deee928743f919fe5fed5a45a744bd0e034a4d219dd429df3e"
+          },
+          {
+            "git_blob_sha": "d1152b1619811a571fb26942bf4602436689cf83",
+            "path": "data/v8",
+            "sha256": "036cbbd5578577f5571ec64cb5406e8ebd52bbe8ecdd9f72cebe234096052c66"
+          },
+          {
+            "git_blob_sha": "77cb29fb260f4b1810759de8df0f4ceb9b83b100",
+            "path": "data/youtube",
+            "sha256": "9ffb657176fdffed567953749c137bb3d8a216ce4e839b3831b626c752902213"
+          }
+        ],
+        "license_path": "LICENSE",
+        "redirect_hosts": [],
+        "repository": "v2fly/domain-list-community",
+        "root_path": "data/google",
+        "tracked_ref": "master"
+      },
+      "sha256": "75a99a3b7a2ec8fddb7783e35fff989c3af057336ba8b921928dc56a461cdc6d",
+      "source": "https://github.com/v2fly/domain-list-community"
+    }
+  ],
+  "schema_version": 1,
+  "source_files": [
+    {
+      "git_blob_sha": "1f086538ba3a1d26f46ec44cfda12c2a0c4753a6",
+      "path": "LICENSE",
+      "sha256": "b9d84a22870d3f21c91a4c6e410c9cc51d00902f5233ad0c84011479244bf7d2"
+    },
+    {
+      "git_blob_sha": "e642185efb7c6cb1322fd872aa976d493084c34c",
+      "path": "data/android",
+      "sha256": "1c90653035a7504b5d0b883f9090717ecfe23f8873aee75645071b1c461c4043"
+    },
+    {
+      "git_blob_sha": "a22014bbce13aa97e8b628ca9147f3fc37711449",
+      "path": "data/anthropic",
+      "sha256": "59ad6a25a6d9759995777fe98f2cf30675199fad00546a0ffe027b95ec0776f0"
+    },
+    {
+      "git_blob_sha": "a2a4bb3972a932d687fc2d757e4b108ae3edc2b9",
+      "path": "data/blogspot",
+      "sha256": "9f9d2e0eba824d204812b0c64bee64ff1f4d4a4c838031f8f24c5f013e5e6063"
+    },
+    {
+      "git_blob_sha": "fef9911dc9bbabf5206cf38f64eab30572fd0d7c",
+      "path": "data/bytedance-ai-!cn",
+      "sha256": "0048660c74ee0f493d281cb94d44052025b9a419e9320b5f472748b75b7711b1"
+    },
+    {
+      "git_blob_sha": "9c591594fc562c06c1fc3966d150380be54d5274",
+      "path": "data/category-ai-!cn",
+      "sha256": "68c652a6ec62fc8d8316c255fb32f94389b084a1b886def6f9e8e631314a11bf"
+    },
+    {
+      "git_blob_sha": "7d4f10a9a4c4016064b7db8ab70ebbb646a3b4b2",
+      "path": "data/cerebras",
+      "sha256": "713ea33f6828bb2ac34db413204ea4ddb5d8740aef64e521f46f55fbc99d771d"
+    },
+    {
+      "git_blob_sha": "e88322583fcf0174baf86134e692aa1644bcb1d8",
+      "path": "data/comfy",
+      "sha256": "0199a140ca1be2d691c17a29f695173c344e83ef9187f321e53c0e8a0392c960"
+    },
+    {
+      "git_blob_sha": "42165f78e1d26f7c1764ab43a99a8152f1719e8a",
+      "path": "data/comfy-ui-launcher",
+      "sha256": "1c33a3088de4e95eceb817db1b982b857a1c4b12c6724d230620745f298a918b"
+    },
+    {
+      "git_blob_sha": "ff22d65c40467fc57b8e85dd46768caad74228c2",
+      "path": "data/cursor",
+      "sha256": "eb7315056ebfb599a7dccedddcb5aa7f7723665aa800e2783fff798c1fa3724e"
+    },
+    {
+      "git_blob_sha": "64b481f933d5a3478c9cdd245718addff527a118",
+      "path": "data/dart",
+      "sha256": "8d4d744d1116638b4789c6502e3168e2c156d6a2747d9f1efd9028c502907a7b"
+    },
+    {
+      "git_blob_sha": "5b8d3dc87c864a30a1aba73afe056e63834c0c96",
+      "path": "data/dola",
+      "sha256": "f732a4248c3594bcfeaecae5629842c7ad72bb32aa297b6b6ffc27f4b96efc6f"
+    },
+    {
+      "git_blob_sha": "33d599a977be4c78f8c17e10b9039e259cd6e1b0",
+      "path": "data/elevenlabs",
+      "sha256": "88f3412837a17af32533013ab039b988a6c26a519d73846f728b84a19e26487f"
+    },
+    {
+      "git_blob_sha": "59e9072836c34efdfc070be5924e649ecc0d82cf",
+      "path": "data/envato",
+      "sha256": "07df2d1f56a06149222183b025dcdb2ef4db3eb49ea0a6d1ba864cbd260f6f3b"
+    },
+    {
+      "git_blob_sha": "6fb0f54341a24d3f131d5be79f1527122111faec",
+      "path": "data/fastlane",
+      "sha256": "c7917e6f926dfe2cbf63709aeeb7bbd397b349fe970467a097bbdd919c199861"
+    },
+    {
+      "git_blob_sha": "2f5fabdcb9a80298a606ef92f00480b5ed00d0d5",
+      "path": "data/firebase",
+      "sha256": "816b85c8cf0e9f686ab3ba332029b3f3ab8f602b01b930a42e4c4bdfee4b07fa"
+    },
+    {
+      "git_blob_sha": "c49a43def509d252652334561a05ac19133ce544",
+      "path": "data/flutter",
+      "sha256": "98e9bc2d286c8edb174f67e195a40b7278890cade98b89dc25842424376f38b8"
+    },
+    {
+      "git_blob_sha": "4047e0cd3ce653b882a74e9e8b8af0bcce633bf5",
+      "path": "data/github",
+      "sha256": "549a8bf61fd4a673a59e0a0f8794e66e5228d6a8bc759c6f4888a287e728ccc2"
+    },
+    {
+      "git_blob_sha": "6435f5a70241da0ed85706219fb08373e20ca9c4",
+      "path": "data/github-copilot",
+      "sha256": "bd8f1a7a846f1111710c31b13b45262f35220a00e8dfaf4c5830dc618ec51748"
+    },
+    {
+      "git_blob_sha": "64f2020c1ba3d0f165457dc774819e8c5ef63e73",
+      "path": "data/golang",
+      "sha256": "2c6febc8eceaa343fb8904840017f65123f30be28eea4c6f3d1a1ce50645b346"
+    },
+    {
+      "git_blob_sha": "e4e550b506d510bcc3087c6a7476783e34e37b49",
+      "path": "data/google",
+      "sha256": "5a85d201b8fb4b03486515618da4c164a0ce0c59341cb2dee6d1b0bdca176653"
+    },
+    {
+      "git_blob_sha": "34615929596bb6edcab06a87ec823bd9c73c7fbf",
+      "path": "data/google-deepmind",
+      "sha256": "fa60e3f80e1487e38c04c92973102ff481c961e620b9bb11fb8585451f5ff2db"
+    },
+    {
+      "git_blob_sha": "3fdb40ef39977e1bdb41bd2b607c63f5571818ae",
+      "path": "data/google-play",
+      "sha256": "ea1a161c52a443b2c0a105f8a94bcfc86e5c8a267d483f34e53848b7310fc65e"
+    },
+    {
+      "git_blob_sha": "2bd23e63ec20ba59fe4baae3e213175a21324269",
+      "path": "data/google-registry",
+      "sha256": "a8060ed62f9ccb984b3099861d23a5f54cc51a5b26d5abddffd08924710d78dd"
+    },
+    {
+      "git_blob_sha": "db8189b00cdc97a417ba193b483c019510bbc35f",
+      "path": "data/google-scholar",
+      "sha256": "76eb1c15c0b4fc479d7a88f4f5065ab9de61c7711e3660f2f4f6dc5ff267a31f"
+    },
+    {
+      "git_blob_sha": "5f486907116041e9159c85d252fd3c0d6c54864c",
+      "path": "data/google-trust-services",
+      "sha256": "09f22a4aac72092ddcdd8e91dbf444b905a6b5eecaede13f2ca5605968d63702"
+    },
+    {
+      "git_blob_sha": "85b35de8a7f1a490cc8ecd9cf77832718683a93c",
+      "path": "data/googlefcm",
+      "sha256": "6611d2b58eda9737b00e14cebdebb52918709df1fc8b39b95a2966b55a1cfc7b"
+    },
+    {
+      "git_blob_sha": "f755c7f42d8c500b4cdd7b0e9d64a7f6d69a7177",
+      "path": "data/groq",
+      "sha256": "d779541783d4c835ad341a13ae3c3a008bfa3e535b46f79518b92bdef17588bb"
+    },
+    {
+      "git_blob_sha": "17079fc6b46c6b5fe53b537310fae4c95de3967f",
+      "path": "data/huggingface",
+      "sha256": "67f5861b31232701f884efd38d9436dd89183fccbd01d6f10d791b9ef6fbf4b8"
+    },
+    {
+      "git_blob_sha": "e0d4131160d4dc282343484b52a0ed5b3999ef02",
+      "path": "data/jetbrains-ai",
+      "sha256": "b1bb655fc82a45311745ef0513dc6889f76cb4bfc0cd9cd563788b5e502b6a53"
+    },
+    {
+      "git_blob_sha": "e7a69fce12a89f3282505d01a9090206000f30b6",
+      "path": "data/kaggle",
+      "sha256": "6257e9fe2594961ccccefa6b9d4a99fda236e9563a7274304303b9a2c63e911b"
+    },
+    {
+      "git_blob_sha": "45866460104cadf2965687eec2c2cd5abed0cc75",
+      "path": "data/liveperson",
+      "sha256": "2e146391a816f4497b0a987f2d7edfb0e7e0e11ae450e47a4c0779a0868d7e22"
+    },
+    {
+      "git_blob_sha": "48f565c7b7aebff3c0c93d350e1c8eb6c5640641",
+      "path": "data/manus",
+      "sha256": "3fa777650b51936dd5f36c7f4763a025f2ed46570fbb4adc63e48eaaa14d1de5"
+    },
+    {
+      "git_blob_sha": "65af23034d79a097c546a8b7766ce13a5b855498",
+      "path": "data/netflix",
+      "sha256": "fbcf90283b3c3482e2178d450793219f9592ea60b2dfa3d16a7a9d40074aa284"
+    },
+    {
+      "git_blob_sha": "2f37732ea053f245ae8b7354ad55330c3d9d9a3e",
+      "path": "data/npmjs",
+      "sha256": "674294756c3e5d7f20e274f7190f28b55eb373122513d0ab5e439e29dd03be53"
+    },
+    {
+      "git_blob_sha": "d6f5f3d1b5fbcfc87e04aafcbeef5ffdc81d766c",
+      "path": "data/openai",
+      "sha256": "25d53e9af3e04d926210d6436bd791594ef4b86f2dc3c108510ac8059d76d969"
+    },
+    {
+      "git_blob_sha": "49c55300b8a9348280365a9d000f22d15d4cc41e",
+      "path": "data/opensourceinsights",
+      "sha256": "f4ade2b230eaf9fa05b2f3ca20d72a24fe7248a876a020bd209921876c6febcd"
+    },
+    {
+      "git_blob_sha": "a04233378d10f425dd4cde20e9c51ef538bedd5d",
+      "path": "data/perplexity",
+      "sha256": "570581bad658566cb493207c14ebb55110750071071e089b4c40054b00af3db0"
+    },
+    {
+      "git_blob_sha": "3bead5b2104df3fc3219508f0f9d2518b39857b0",
+      "path": "data/poe",
+      "sha256": "e689a8d337b64bcf760e5d8dfe03e3d29d8558063db93acba2d1d6eb9c11003a"
+    },
+    {
+      "git_blob_sha": "c3fc4c0128368b6addacebec0c13cb033d26c381",
+      "path": "data/polymer",
+      "sha256": "fbb1cb902ab884deee928743f919fe5fed5a45a744bd0e034a4d219dd429df3e"
+    },
+    {
+      "git_blob_sha": "e39114062f95c68035a44a25965649c93a89a831",
+      "path": "data/spotify",
+      "sha256": "02c79e71b22805e1dafa156c9370760bd7e6295af30eaf1c9004a1be2b35065b"
+    },
+    {
+      "git_blob_sha": "aed880e37775c67556c4975ffebaf6c6681862bf",
+      "path": "data/telegram",
+      "sha256": "24a2d026dbf3a09a8ca893420a40adbad70328978df0100d9c63abecdbf01b5d"
+    },
+    {
+      "git_blob_sha": "d1152b1619811a571fb26942bf4602436689cf83",
+      "path": "data/v8",
+      "sha256": "036cbbd5578577f5571ec64cb5406e8ebd52bbe8ecdd9f72cebe234096052c66"
+    },
+    {
+      "git_blob_sha": "f13f57fc3643fc9862e46242af13623fd09edca8",
+      "path": "data/windsurf",
+      "sha256": "d6d082e40d180efbabde3b1a5bd8fe1bdc804f1a11b79d2128fe41e0b4dc4e16"
+    },
+    {
+      "git_blob_sha": "d84939aa536f676684086d1269b25c7eaecc970c",
+      "path": "data/xai",
+      "sha256": "4c95fc6465d5f135f5d27935e9b44f6fcc82cfaa0eb6bb4e3232c44c5c581628"
+    },
+    {
+      "git_blob_sha": "3618570f096b2484cb9b9b42e54a570fdd20636b",
+      "path": "data/youmind",
+      "sha256": "a1a4dd677d58f48dead7421a94a46ddc34f87c76ff35c8322dcc952ac79d0f29"
+    },
+    {
+      "git_blob_sha": "77cb29fb260f4b1810759de8df0f4ceb9b83b100",
+      "path": "data/youtube",
+      "sha256": "9ffb657176fdffed567953749c137bb3d8a216ce4e839b3831b626c752902213"
+    }
+  ]
+}
