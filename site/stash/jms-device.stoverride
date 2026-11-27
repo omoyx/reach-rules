@@ -1,0 +1,76 @@
+name: JMS 原生额度
+desc: 在覆写「参数」里填两条官网链接；覆写本身不含秘密，可公开托管并随配置同步。需要 iOS/tvOS 3.7+ 或 macOS 4.4+。
+arguments-version: 1
+arguments:
+  sub:
+    type: input
+    title: JMS 官网 Clash YAML 订阅（私密）
+    required: true
+  counter:
+    type: input
+    title: JMS 官网 Bandwidth Counter HTTPS 链接（私密）
+    required: true
+  renewal:
+    type: input
+    title: 下次续费日期（可留空）
+    description: YYYY-MM-DD；不是每月流量重置日。
+    default: ""
+hosts: {jms-quota.invalid: 127.0.0.1}
+rules: ["DOMAIN,jms-quota.invalid,DIRECT"]
+http:
+  force-http-engine: ["jms-quota.invalid:80"]
+  script:
+    - name: jms-quota
+      type: request
+      timeout: 18
+      match: '^http://jms-quota\.invalid/jms$'
+      argument: '{"sub":${args.sub|json},"counter":${args.counter|json},"renewal":${args.renewal|json}}'
+script-providers:
+  jms-quota:
+    payload: |
+      // Answer the fixed card URL with a JMS subscription plus quota headers.
+      // Credentials live in the override arguments; the payload itself holds no secret.
+      (() => {
+        const reply = (status, headers = {}, body = '') => $done({response: {
+          status, headers: {...headers, 'Cache-Control': 'no-store'}, body
+        }});
+        const SUB = /^https:\/\/[a-z0-9.-]+(?::443)?\/[^\s\\#]+$/i;
+        const COUNTER = /^https:\/\/(?:[a-z0-9-]+\.)*(?:justmysocks\.(?:net|com)|justmysocks[56]\.net)(?::443)?\/[^\s\\#]+$/i;
+        if ($request.url !== 'http://jms-quota.invalid/jms' || !['HEAD', 'GET'].includes($request.method)) return reply(404);
+        let cfg;
+        try { cfg = JSON.parse($argument); } catch (_) { return reply(503); }
+        if (!cfg || typeof cfg.sub !== 'string' || !SUB.test(cfg.sub) ||
+            typeof cfg.counter !== 'string' || !COUNTER.test(cfg.counter)) return reply(503);
+        let expire = 0;
+        if (cfg.renewal) {
+          // LA midnight falls at 07:00 or 08:00 UTC, including DST transition dates.
+          try {
+            if (!/^\d{4}-\d{2}-\d{2}$/.test(cfg.renewal)) return reply(503);
+            const utc = Date.parse(cfg.renewal + 'T00:00:00Z');
+            if (new Date(utc).toISOString().slice(0, 10) !== cfg.renewal) return reply(503);
+            const clock = new Intl.DateTimeFormat('en-GB', {timeZone: 'America/Los_Angeles', hour: '2-digit', hourCycle: 'h23'});
+            const midnight = [7, 8].map(h => utc + h * 3600000).find(t => clock.format(t) === '00');
+            if (!Number.isFinite(midnight)) return reply(503);
+            expire = midnight / 1000;
+          } catch (_) { return reply(503); }
+        }
+        const get = (url, cb) => $httpClient.get({url, timeout: 6, insecure: false,
+          'auto-redirect': false, 'auto-cookie': false, headers: {'User-Agent': 'Stash'}}, cb);
+        const finish = (body) => get(cfg.counter, (err, res, data) => {
+          const headers = {'Content-Type': 'text/yaml; charset=utf-8'};
+          if (!err && res && res.status === 200) try {
+            const obj = JSON.parse(data);
+            const count = x => (typeof x === 'number' || typeof x === 'string') && /^\d+$/.test(String(x)) && Number.isSafeInteger(Number(x));
+            const used = obj.bw_counter_b, total = obj.monthly_bw_limit_b;
+            if (count(used) && count(total) && Number(total) > 0)
+              headers['Subscription-Userinfo'] = `upload=0; download=${Number(used)}; total=${Number(total)}` +
+                (expire > 0 ? `; expire=${expire}` : '');
+          } catch (_) {} // No estimate or fabricated zero on quota failure.
+          reply(200, headers, body);
+        });
+        if ($request.method === 'HEAD') return finish('');
+        get(cfg.sub, (err, res, body) => {
+          if (err || !res || res.status !== 200 || typeof body !== 'string' || !/^proxies\s*:/m.test(body)) return reply(502);
+          finish(body);
+        });
+      })();
