@@ -43,3 +43,21 @@ rule-providers:
     url: https://omoyx.github.io/reach-rules/current/google.yaml
     path: ./rules/reach-google.yaml
     interval: 86400
+  twitter:
+    behavior: classical
+    format: yaml
+    url: https://omoyx.github.io/reach-rules/current/twitter.yaml
+    path: ./rules/reach-twitter.yaml
+    interval: 86400
+  reddit:
+    behavior: classical
+    format: yaml
+    url: https://omoyx.github.io/reach-rules/current/reddit.yaml
+    path: ./rules/reach-reddit.yaml
+    interval: 86400
+  threads:
+    behavior: classical
+    format: yaml
+    url: https://omoyx.github.io/reach-rules/current/threads.yaml
+    path: ./rules/reach-threads.yaml
+    interval: 86400

@@ -1,6 +1,6 @@
 {
-  "index": "releases/20261127T201713245525Z-2e8b50751205/index.json",
-  "release_id": "20261127T201713245525Z-2e8b50751205",
+  "index": "releases/20261128T035745654254Z-65d81c491f3d/index.json",
+  "release_id": "20261128T035745654254Z-65d81c491f3d",
   "rule_sets": [
     {
       "behavior": "classical",
@@ -50,6 +50,27 @@
       "id": "google",
       "sha256": "75a99a3b7a2ec8fddb7783e35fff989c3af057336ba8b921928dc56a461cdc6d",
       "url": "current/google.yaml"
+    },
+    {
+      "behavior": "classical",
+      "entry_count": 24,
+      "id": "twitter",
+      "sha256": "ba019632156f04b9da2b514c111d5472054212c9fb66d05e5243199589a3657b",
+      "url": "current/twitter.yaml"
+    },
+    {
+      "behavior": "classical",
+      "entry_count": 12,
+      "id": "reddit",
+      "sha256": "c258ac491d21d2c924aa8eb873fb4e0cca05a881ab1caa87f28cd01348195e6a",
+      "url": "current/reddit.yaml"
+    },
+    {
+      "behavior": "classical",
+      "entry_count": 2,
+      "id": "threads",
+      "sha256": "56360f56c25955b92dd0a423b70388c725fabb77ee3b17bd1a3015e55c192981",
+      "url": "current/threads.yaml"
     }
   ],
   "schema_version": 1
